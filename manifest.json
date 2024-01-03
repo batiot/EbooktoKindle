@@ -1,0 +1,23 @@
+{
+  "name": "EbooktoKindle",
+  "short_name": "EbooktoKindle",
+  "theme_color": "#8936FF",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "https://ovh.batiot.com/",
+  "start_url": "https://ovh.batiot.com/envoi.html",
+  "share_target": {
+    "action": "https://ovh.batiot.com/envoi.php",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "epubfile",
+          "accept": [".epub,application/epub+zip", ".epub"]
+        }
+      ]
+    }
+  }
+}
